@@ -95,8 +95,12 @@ void first()
     textSize(40);
     String a="Once upon a time, there was";
     String a1="a man who could tavel anywhere.";
+    String a2="Use your arrowkeys to move on.";
 text(a,  0, 60);
 text(a1,  0, 120);
+textSize(20);
+fill(255,0,34);
+text(a2,0,200);
 
  ra.update();
 
@@ -365,11 +369,13 @@ if (keyCode == RIGHT)
       image(next,700,730,100,70);
       }
     }
-    
+ if(NS>400)
+ {
 if (keyCode == LEFT) 
     {
       NS=NS-800;
       image(prev,0,730,100,70);
+    }
     }
     }
   
